@@ -54,4 +54,4 @@ It smart cast things for ya.
 Even if you change the type of `User.age` from `Int!` to `String` or `String!` or `String?`,
 SmartBinder still can handle all of this for ya.
 
-SmartBinder doesn't work only for json binding but also for other force casting.
+SmartBinder work not only for json binding but also for other force casting.

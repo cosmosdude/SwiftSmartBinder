@@ -5,7 +5,7 @@
 
 So then, this library ,*SmartBinder*, is the right choice for ya.
 
-```
+```swift
   // example
   struct User {
     var name : String!
@@ -16,7 +16,7 @@ So then, this library ,*SmartBinder*, is the right choice for ya.
   }
 ```
 Suppose you have this dictionary structure
-```
+```json
   {
     "name" : "A Name",
     "age" : 19,
@@ -27,7 +27,7 @@ Suppose you have this dictionary structure
 
 If you are going to parse that dictionary, you might have to parse it in traditional way.
 Like this
-```
+```swift
   var user = User();
   user.name = json["name"] as! String
   user.age = json["age"] as! Int
@@ -43,7 +43,7 @@ This lib can save you from that.
 Instead of traditional way, just do like this.
 It smart cast things for ya.
 
-```
+```swift
   var user = User();
   user.name <- json["name"]
   user.age <- json["age"]
